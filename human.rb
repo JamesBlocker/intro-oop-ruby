@@ -29,13 +29,10 @@ class Human
         self.are_you_pro
         self.what_langs
     end
-
 end
 
 puts
-puts
-puts
-p "X" * 45
+p "X" * 35
 james = Human.new("James", "black", true, ["English", "Spanish"], ["JS", "Ruby"])
 james.fire_all
 p "*" * 30

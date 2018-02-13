@@ -1,12 +1,13 @@
 class Dog
-    def initialize(nombre, color)
+    def initialize(nombre, color, nationality)
         @name = nombre
         @color = color
+        @nationality = nationality
         p "I'm alive! says the #{color} dog"
     end
 
     def bark
-        p "#{@name} says woof"
+        p "#{@name} the #{@color} #{@nationality} dog says woof"
     end
 
     def change_name(new_name)
@@ -16,11 +17,11 @@ end
 
 p "***************************"
 
-j_dog = Dog.new("J Dog", "brown")
+j_dog = Dog.new("J Dog", "brown", "Lebanese")
 j_dog.bark
 p j_dog.class
 
-droopy = Dog.new("Droopy", "white")
+droopy = Dog.new("Droopy", "white", "Bulgarian")
 droopy.bark
 droopy.bark
 droopy.change_name("Snoopy")

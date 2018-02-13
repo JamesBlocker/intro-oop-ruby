@@ -32,6 +32,9 @@ class Human
 
 end
 
+puts
+puts
+puts
 p "X" * 45
 james = Human.new("James", "black", true, ["English", "Spanish"], ["JS", "Ruby"])
 james.fire_all
